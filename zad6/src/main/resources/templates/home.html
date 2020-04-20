@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Pierwszy projekt springowy</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h3>Zadanie 0</h3>
+        <h1>Przedstaw się ładnie:</h1>
+        <form action="/hello" method="post">
+            Imię: <input type="text" name="imie" />
+            Wiek: <input type="number" name="wiek" />
+            <input type="submit" value="Wyślij"/><br></br>
+        </form>  
+            
+            <h3>Zadanie 1</h3>
+            <form action="/CalculatorController" method="post">
+                Zmienna 1: <input type="number" name="x" />
+                Zmienna 2: <input type="number" name="y" />
+                <input type="submit" value="Dodaj" />
+            </form>
+            
+            <h3>Zadanie 2</h3>
+            
+            <form action="/opcja" method="post">
+                Zmienna 1: <input type="number" name="x" />
+                Zmienna 2: <input type="number" name="y" />
+                <label for="operacja">Wybierz operacje:</label>
+
+                <select id="option" name="option">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                 <input type="submit" value="Wynik" />
+            </form>
+            
+            <h3>Zadanie 3</h3>
+            <form action="/CalculatorController_zad3" method="post">
+                Zmienna 1: <input type="number" name="x" />
+                Zmienna 2: <input type="number" name="y" />
+                <label for="operacja">Wybierz operacje:</label>
+
+                <select id="operator" name="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="submit" value="Wynik" />
+            </form>
+            
+        
+    </body>
+</html>

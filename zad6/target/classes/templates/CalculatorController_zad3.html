@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Kalkulator zad3</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>Cześć Zad3 </h1>
+        <p>
+            <span th:text="${calculatorForm.getX()}">a</span> <span th:text="${calculatorForm.getOperator()}"></span> <span th:text="${calculatorForm.getY()}">b</span> = <span th:text="${wynik}"></span>
+        </p>
+        </body>
+        </html>
+
+        
+    </body>
+</html>
